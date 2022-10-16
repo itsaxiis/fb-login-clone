@@ -1,5 +1,6 @@
 body {
     background-color: #f0f2f5;
+    overflow-y: scroll;
     margin: 0;
     padding: 0;
 }
@@ -16,6 +17,7 @@ img {
     color: black;
     font-size: 28px;
     font-weight: 500;
+    display: block;
 }
 #form {
     width: 400px;
@@ -74,10 +76,12 @@ img {
     margin: 20px auto;
 }
 .content {
+margin: 0 40px;
 display: flex;
 justify-content: center;
 align-items: center;
 gap: 100px;
+flex-wrap: nowrap;
 }
 .right-side {
     display: flex;
@@ -91,4 +95,35 @@ gap: 100px;
     text-decoration: none;
     color: black;
     font-weight: 700;
+}
+@media (max-width: 900px) {
+    body {
+        margin: 0;
+    }
+    #form {
+        
+        margin: auto;
+    }
+    .content {
+        display: block;
+        gap: 0;
+        margin: 35px auto;
+        align-items: center;
+    }
+    #description {
+        margin: 35px auto;
+        text-align: center;
+        font-weight: 400;
+    }
+    #img {
+        margin: 5px auto 35px auto;
+        display: block;
+    }
+    #left-side {
+        margin: 5px;
+    }
+    .tagline {
+        text-align: center;
+        margin: 35px auto;
+    }
 }

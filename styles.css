@@ -183,7 +183,7 @@ input:focus {
     }
     .tagline {
         text-align: center;
-        margin: 35px auto;
+        margin: 60px auto 35px auto;
     }
     .footer-content {
         margin: 25px 0 0 0;

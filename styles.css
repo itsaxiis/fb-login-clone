@@ -136,8 +136,12 @@ a {
     margin-top: 0;
     letter-spacing: -0.2px;
 }
+input:focus {
+    outline: solid #227bef 1px;
+}
 .footer-content {
     margin: 25px 100px 0 100px;
+    line-height: 7px;
     padding: 0 75px;
 }
 #copyright {
@@ -182,7 +186,7 @@ a {
         margin: 35px auto;
     }
     .footer-content {
-        margin: 25px 75px 0 75px;
+        margin: 25px 0 0 0;
         padding: 0 75px;
     }
 }
